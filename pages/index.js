@@ -1,4 +1,6 @@
+// Imports
 import Head from 'next/head'
+import { useState } from 'react'
 // Icons
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import {
@@ -20,12 +22,14 @@ import web5 from '../public/web5.png'
 import web6 from '../public/web6.png'
 
 export default function Home() {
+   const [darkMode, setDarkMode] = useState('false')
+
    const oddLi =
-      'odd:text-emerald-400 text-gray-600 font-medium'
+      'odd:text-emerald-400 text-gray-600 font-medium dark:text-gray-300 dark:odd:text-emerald-400 '
    const evenLi =
-      'even:text-emerald-400 text-gray-600 font-medium'
+      'even:text-emerald-400 text-gray-600 font-medium dark:text-gray-300 dark:even:text-emerald-400'
    return (
-      <div>
+      <div className={darkMode ? 'dark' : ''}>
          <Head>
             <title>
                Mohammad El Itani | Junior Front-End
@@ -38,16 +42,21 @@ export default function Home() {
             <link rel='icon' href='/favicon.ico' />
          </Head>
 
-         <main className='bg-white px-5 md:px-20 lg:px-40'>
+         <main className='bg-white px-5 md:px-20 lg:px-40 dark:bg-gray-900 dark:text-gray-300'>
             {/* Front Page */}
             <section className='min-h-screen'>
-               <nav className='py-10 mb-10 flex justify-between items-center mx-auto md:mb-4'>
+               <nav className='py-10 mb-10 flex justify-between items-center mx-auto md:mb-4 dark:text-gray-300'>
                   <h1 className='font-burtons text-xl'>
                      Mohammad El Itani
                   </h1>
                   <ul className='flex items-center'>
                      <li>
-                        <BsFillMoonStarsFill className='cursor-pointer text-2xl ' />
+                        <BsFillMoonStarsFill
+                           onClick={() =>
+                              setDarkMode(!darkMode)
+                           }
+                           className='cursor-pointer text-2xl dark:text-gray-300'
+                        />
                      </li>
                      <li>
                         <a
@@ -63,17 +72,17 @@ export default function Home() {
                   <h2 className='text-5xl text-emerald-400 font-medium md:text-6xl'>
                      Mohammad El Itani
                   </h2>
-                  <h3 className='text-2xl py-2 md:text-3xl'>
+                  <h3 className='text-2xl py-2 md:text-3xl dark:text-gray-300'>
                      Junior React Front-End Developer
                   </h3>
-                  <p className='text-md py-2 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>
+                  <p className='text-md py-2 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-400'>
                      A fresh Computer Science Graduate
                      that&apos;s passionate about Web
                      Development and its latest and most
                      demanded Technologies!
                   </p>
                </div>
-               <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
+               <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-300'>
                   <a
                      href='https://github.com/MoeElItani'
                      target='_blank'
@@ -102,10 +111,10 @@ export default function Home() {
 
                {/* Second Page */}
                <div className='text-center mx-auto'>
-                  <h3 className='text-3xl font-medium py-1 mt-20 mx-auto'>
+                  <h3 className='text-3xl font-medium py-1 mt-20 mx-auto dark:text-gray-300'>
                      Front-End Technologies
                   </h3>
-                  <p className='text-md py-4 leading-8 text-gray-800 max-w-xl mx-auto'>
+                  <p className='text-md py-4 leading-8 text-gray-800 max-w-xl mx-auto dark:text-gray-400'>
                      I usually look for the newest and most
                      demanded
                      <span className='text-emerald-400 inline'>
@@ -114,12 +123,12 @@ export default function Home() {
                      </span>{' '}
                      to learn and improve my skill set
                   </p>
-                  <p className='text-md py-1 leading-8 text-gray-800 max-w-xl mx-auto'>
+                  <p className='text-md py-1 leading-8 text-gray-800 max-w-xl mx-auto dark:text-gray-400'>
                      So currently, I use various
                      technologies that include but are not
                      limited to:
                   </p>
-                  <div className='hover:scale-110 inline-block shadow-lg text-center p-12 rounded-xl leading-7'>
+                  <div className='hover:scale-110 inline-block shadow-lg text-center p-12 rounded-xl leading-7 dark:shadow-gray-300/20'>
                      <Image
                         width={100}
                         height={100}
@@ -134,7 +143,7 @@ export default function Home() {
                         </li>
                      </ul>
                   </div>
-                  <div className='hover:scale-110  inline-block shadow-lg text-center p-12 md:p-16 mx-10 rounded-xl m-6 leading-7'>
+                  <div className='hover:scale-110  inline-block shadow-lg text-center p-12 md:p-16 mx-10 rounded-xl m-6 leading-7 dark:shadow-emerald-300/20'>
                      <Image
                         width={100}
                         height={100}
@@ -153,7 +162,7 @@ export default function Home() {
                         </li>
                      </ul>
                   </div>
-                  <div className='hover:scale-110 inline-block shadow-lg text-center p-12 rounded-xl leading-7'>
+                  <div className='hover:scale-110 inline-block shadow-lg text-center p-12 rounded-xl leading-7 dark:shadow-gray-300/20'>
                      <Image
                         width={100}
                         height={100}
@@ -173,10 +182,10 @@ export default function Home() {
             {/* Education & Projects */}
             <section>
                <div className='text-center mx-auto'>
-                  <h3 className='text-3xl font-medium py-1 mt-20'>
+                  <h3 className='text-3xl font-medium py-1 mt-20 dark:text-gray-300'>
                      Education & Projects
                   </h3>
-                  <p className='text-md py-2 leading-8 text-gray-800 max-w-xl mx-auto'>
+                  <p className='text-md py-2 leading-8 text-gray-800 max-w-xl mx-auto dark:text-gray-400'>
                      Education is important, I have a
                      Bachelor&apos;s Degree in Computer
                      Science and a Bachelorette Technique 3
