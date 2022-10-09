@@ -20,6 +20,7 @@ import web3 from '../public/web3.png'
 import web4 from '../public/web4.png'
 import web5 from '../public/web5.png'
 import web6 from '../public/web6.png'
+import Contact from './components/Contact'
 
 export default function Home() {
    const [darkMode, setDarkMode] = useState('false')
@@ -45,9 +46,9 @@ export default function Home() {
          <main className='bg-white px-5 md:px-20 lg:px-40 dark:bg-gray-900 dark:text-gray-300'>
             {/* Front Page */}
             <section className='min-h-screen'>
-               <nav className='py-10 mb-10 flex justify-between items-center mx-auto md:mb-4 dark:text-gray-300'>
+               <nav className='bg-white dark:bg-gray-900 sticky px-24 top-0 left-0 z-10 py-6 flex  justify-between items-center mx-auto dark:text-gray-300'>
                   <h1 className='font-burtons text-xl'>
-                     Mohammad El Itani
+                     <a href='#intro'>Mohammad El Itani</a>
                   </h1>
                   <ul className='flex items-center'>
                      <li>
@@ -68,7 +69,10 @@ export default function Home() {
                      </li>
                   </ul>
                </nav>
-               <div className='text-center flex justify-center items-center flex-col'>
+               <div
+                  id='intro'
+                  className='text-center flex justify-center items-center flex-col mt-24'
+               >
                   <h2 className='text-5xl text-emerald-400 font-medium md:text-6xl'>
                      Mohammad El Itani
                   </h2>
@@ -128,7 +132,7 @@ export default function Home() {
                      technologies that include but are not
                      limited to:
                   </p>
-                  <div className='hover:scale-110 inline-block shadow-lg text-center p-12 rounded-xl leading-7 dark:shadow-gray-300/20'>
+                  <div className='hover:scale-110 inline-block shadow-lg text-center p-12 rounded-xl leading-7 dark:shadow-gray-200/20 dark:bg-gray-800'>
                      <Image
                         width={100}
                         height={100}
@@ -143,7 +147,7 @@ export default function Home() {
                         </li>
                      </ul>
                   </div>
-                  <div className='hover:scale-110  inline-block shadow-lg text-center p-12 md:p-16 mx-10 rounded-xl m-6 leading-7 dark:shadow-emerald-300/20'>
+                  <div className='hover:scale-110  inline-block shadow-lg text-center p-12 md:p-16 mx-10 rounded-xl m-6 leading-7 dark:shadow-emerald-300/30 dark:bg-gray-800'>
                      <Image
                         width={100}
                         height={100}
@@ -162,7 +166,7 @@ export default function Home() {
                         </li>
                      </ul>
                   </div>
-                  <div className='hover:scale-110 inline-block shadow-lg text-center p-12 rounded-xl leading-7 dark:shadow-gray-300/20'>
+                  <div className='hover:scale-110 inline-block shadow-lg text-center p-12 rounded-xl leading-7 dark:shadow-gray-200/20 dark:bg-gray-800'>
                      <Image
                         width={100}
                         height={100}
@@ -256,6 +260,8 @@ export default function Home() {
                   </div>
                </div>
             </section>
+            {/* Contact */}
+            <Contact />
          </main>
       </div>
    )
