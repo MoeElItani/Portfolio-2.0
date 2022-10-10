@@ -2,7 +2,7 @@ import React from 'react'
 
 const footer = () => {
    return (
-      <div className='footer flex flex-col items-center mt-20 pb-8'>
+      <div className='flex flex-col items-center mt-20 pb-8 text-center'>
          <div>
             Junior React Front-End Developer Portfolio
          </div>

@@ -16,9 +16,9 @@ const Projects = () => {
        </h3>
        <p className='text-md py-2 leading-8 text-gray-800 max-w-xl mx-auto dark:text-gray-400'>
           Education is important, I have a
-          Bachelor&apos;s Degree in Computer
-          Science and a Bachelorette Technique 3
-          Degree in Information Technology. But I
+          Bachelor&apos;s Degree in <span className='text-emerald-400'>Computer
+          Science</span> and a Bachelorette Technique 3
+          Degree in <span className='text-emerald-400'>Information Technology</span>. But I
           was aware that school only provides you
           with the basics and it is not enough,
           so I always tried to improve my skills

@@ -55,7 +55,7 @@ const Contact = () => {
                      type='text'
                      name='from_name'
                      id='floating_first_name'
-                     className='user text-lg block py-2.5 px-0 w-full text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-emerald-300 outline-none focus:ring-0 focus:border-emerald-300 peer dark:text-gray-200 dark:autofill:color-white'
+                     className='user text-lg block py-2.5 px-0 w-full text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-emerald-400 outline-none focus:ring-0 focus:border-emerald-400 peer dark:text-gray-200 dark:autofill:color-white'
                      placeholder=' '
                      onChange={(e) =>
                         setName(e.target.value)
@@ -65,7 +65,7 @@ const Contact = () => {
                   />
                   <label
                      for='floating_first_name'
-                     className='peer-focus:font-medium absolute text-md text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-emerald-300 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
+                     className='peer-focus:font-medium absolute text-md text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-emerald-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
                   >
                      Full name
                   </label>
@@ -76,7 +76,7 @@ const Contact = () => {
                   type='email'
                   name='from_email'
                   id='floating_email'
-                  className='user block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-emerald-300 outline-none focus:ring-0 focus:border-emerald-300 peer dark:text-gray-200 dark:autofill:color-white'
+                  className='user block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-emerald-400 outline-none focus:ring-0 focus:border-emerald-400 peer dark:text-gray-200 dark:autofill:color-white'
                   placeholder=' '
                   onChange={(e) => setEmail(e.target.value)}
                   value={email}
@@ -85,7 +85,7 @@ const Contact = () => {
 
                <label
                   for='floating_email'
-                  className='peer-focus:font-medium absolute text-md text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-emerald-300  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
+                  className='peer-focus:font-medium absolute text-md text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-emerald-400  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
                >
                   Email address
                </label>
@@ -96,7 +96,7 @@ const Contact = () => {
                      type='message'
                      name='message'
                      id='floating_first_name'
-                     className='user block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-emerald-300 outline-none focus:ring-0 focus:border-emerald-300 peer dark:text-gray-200'
+                     className='user block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-emerald-400 outline-none focus:ring-0 focus:border-emerald-400 peer dark:text-gray-200'
                      placeholder=' '
                      onChange={(e) =>
                         setMsg(e.target.value)
@@ -106,7 +106,7 @@ const Contact = () => {
                   />
                   <label
                      for='floating_first_name'
-                     className='peer-focus:font-medium absolute text-md text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-emerald-300 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
+                     className='peer-focus:font-medium absolute text-md text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-emerald-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
                   >
                      Message
                   </label>
@@ -116,9 +116,9 @@ const Contact = () => {
             <input
                type='submit'
                value='Send Message'
-               className='button cursor-pointer text-gray-500 dark:text-gray-300 bg-gray-200 hover:bg-emerald-300 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-gray-800 dark:hover:bg-gray-700  dark:focus:ring-transparent'
+               className='button cursor-pointer text-gray-500 dark:text-gray-300 bg-gray-200 hover:bg-emerald-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-gray-800 dark:hover:bg-gray-700  dark:focus:ring-transparent'
             ></input>
-            <div className='mx-auto'>
+            <div className='mx-auto text-center'>
                <span>
                   {done &&
                      'I received your message, thanks for contacting me!'}
