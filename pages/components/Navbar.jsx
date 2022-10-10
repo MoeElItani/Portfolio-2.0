@@ -17,15 +17,13 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                   className='cursor-pointer text-2xl dark:text-gray-300'
                />
             </li>
-            <li>
-               <a
-                  href='../../Resume/Mohammad El Itani - Resume.pdf'
-                  download='Mohammad El Itani - Resume.pdf'
-                  className='bg-gradient-to-r from-emerald-400 to to-cyan-500 text-white px-4 py-2 rounded-lg ml-8'
-               >
-                  Resume
-               </a>
-            </li>
+            <a
+               href='https://download1505.mediafire.com/myb9tqf90dxg/oob8whjy4klync4/Mohammad+El+Itani+-+Resume.pdf'
+               download
+               className='bg-gradient-to-r from-emerald-400 to to-cyan-500 text-white px-4 py-2 rounded-lg ml-8'
+            >
+               <button>Resume</button>
+            </a>
          </ul>
       </nav>
    )
