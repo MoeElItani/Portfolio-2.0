@@ -2,7 +2,7 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 
-const Contact = ({ darkMode }) => {
+const Contact = () => {
    const [name, setName] = useState('')
    const [email, setEmail] = useState('')
    const [msg, setMsg] = useState('')
@@ -47,7 +47,7 @@ const Contact = ({ darkMode }) => {
             autoComplete='off'
             ref={form}
             onSubmit={sendEmail}
-            className='flex flex-col w-2/3 justify-center'
+            className='flex flex-col w-10/12 md:w-2/3 justify-center'
          >
             <div className='grid '>
                <div className='relative z-0 mb-6 w-full group'>

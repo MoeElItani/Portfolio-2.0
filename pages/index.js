@@ -27,22 +27,16 @@ export default function Home() {
             <link rel='icon' href='/favicon.ico' />
          </Head>
          <main className='bg-white px-5 md:px-20 lg:px-40 dark:bg-gray-900 dark:text-gray-300'>
-            {/* Front Page */}
             <section className='min-h-screen'>
-               {/* Navbar */}
+               {/* Components */}
                <Navbar
                   setDarkMode={setDarkMode}
                   darkMode={darkMode}
                />
-               {/* Intro */}
                <Intro />
-               {/* Technologies */}
                <Technologies />
-               {/* Education & Projects */}
                <Projects />
-               {/* Contact */}
                <Contact />
-               {/* Footer */}
                <Footer />
             </section>
          </main>
