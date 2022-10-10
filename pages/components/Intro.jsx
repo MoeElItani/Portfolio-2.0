@@ -40,7 +40,7 @@ const Intro = () => {
                target='_blank'
                rel='noreferrer'
             >
-               <AiFillLinkedin className='hover:-rotate-12' />
+               <AiFillLinkedin className='hover:rotate-12' />
             </a>
             <a
                href='https://www.instagram.com/_mhmditani/'
