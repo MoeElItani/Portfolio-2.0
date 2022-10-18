@@ -14,14 +14,15 @@ const Navbar = ({ setDarkMode, darkMode }) => {
             <li>
                <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className='cursor-pointer text-2xl dark:text-gray-300'
+                  className='cursor-pointer text-2xl dark:text-gray-300 '
                />
             </li>
             <a
                href='https://download1505.mediafire.com/myb9tqf90dxg/oob8whjy4klync4/Mohammad+El+Itani+-+Resume.pdf'
                download
-               className='bg-gradient-to-r from-emerald-400 to to-cyan-500 text-white px-4 py-2 rounded-lg ml-8'
+               className='bg-gradient-to-r from-emerald-400 to to-cyan-500 text-white  px-4 py-2 rounded-lg ml-8 flex justify-center items-center gap-3'
             >
+               <BsDownload className='animate-bounce' />
                <button>Resume</button>
             </a>
          </ul>
