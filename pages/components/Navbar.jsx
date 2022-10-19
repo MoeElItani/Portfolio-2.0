@@ -18,7 +18,9 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                />
             </li>
             <a
-               href='https://download1505.mediafire.com/myb9tqf90dxg/oob8whjy4klync4/Mohammad+El+Itani+-+Resume.pdf'
+               href='https://download1505.mediafire.com/d6bppdxduv7g/oob8whjy4klync4/Mohammad'
+               target='_blank'
+               rel='noreferrer'
                download
                className='bg-gradient-to-r from-emerald-400 to to-cyan-500 text-white  px-4 py-2 rounded-lg ml-8 flex justify-center items-center gap-3'
             >
