@@ -18,7 +18,7 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                />
             </li>
             <a
-               href='https://download1505.mediafire.com/d6bppdxduv7g/oob8whjy4klync4/Mohammad'
+               href='https://drive.google.com/file/d/1j9ssDJ_deplWOV0msaaZPJGy5JJRNP9G/view'
                target='_blank'
                rel='noreferrer'
                download
