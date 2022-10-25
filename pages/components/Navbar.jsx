@@ -18,7 +18,7 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                />
             </li>
             <a
-               href='https://drive.google.com/file/d/1j9ssDJ_deplWOV0msaaZPJGy5JJRNP9G/view'
+               href='https://drive.google.com/file/d/1bxnVH7k8u8XSxhdvqiXtfeOssmcvX0qx/view'
                target='_blank'
                rel='noreferrer'
                download
